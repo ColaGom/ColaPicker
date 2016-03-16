@@ -4,9 +4,20 @@
     android:layout_height="match_parent"
     tools:context=".ColaActivity">
 
+    <include
+        android:id="@+id/root_header"
+        layout="@layout/header" />
+
     <GridView
         android:id="@+id/gv_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="0.5dp"
+        android:listSelector="?android:attr/selectableItemBackground"
+        android:numColumns="3"
+        android:verticalSpacing="0.5dp"
+        android:layout_below="@id/root_header" />
 
 </RelativeLayout>

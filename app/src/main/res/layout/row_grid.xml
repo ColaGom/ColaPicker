@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cbstudio.colapicker.view.SquaredFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false" >
+
+    <com.cbstudio.colapicker.view.SquaredImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+    <FrameLayout
+        android:id="@+id/root_curver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/outline_main_4"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+</com.cbstudio.colapicker.view.SquaredFrameLayout>

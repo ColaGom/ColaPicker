@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.cbstudio.colapicker"
-        minSdkVersion 10
-        targetSdkVersion 23
+        minSdkVersion 11
+        targetSdkVersion 19
         versionCode 1
         versionName "1.0"
     }
@@ -22,4 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:19.1.0'
 }
