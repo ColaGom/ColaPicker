@@ -75,7 +75,6 @@ public class ColaActivity extends Activity implements View.OnClickListener, Adap
 
         mAdapter = new SimpleGridAdapter(this, 0, uriList);
         mGvMain.setAdapter(mAdapter);
-        mGvMain.smoothScrollByOffset(0);
         mGvMain.setOnItemClickListener(this);
 
         mAdapter.notifyDataSetChanged();
@@ -107,20 +106,18 @@ public class ColaActivity extends Activity implements View.OnClickListener, Adap
     public void onClick(View view) {
         int id = view.getId();
 
-        switch (id)
-        {
-            case R.id.btn_back:
-                setResult(RESULT_CANCELED);
-                finish();
-                break;
-            case R.id.btn_complete:
-                Uri[] arrUri = mAdapter.getSelectedUri().toArray(new Uri[mAdapter.getSelectedUri().size()]);
+        if (id == R.id.btn_back) {
+            setResult(RESULT_CANCELED);
+            finish();
 
-                Intent intent = new Intent();
-                intent.putExtra(EXTRA_IMAGE_URIS, arrUri);
-                setResult(RESULT_OK);
-                finish();
-                break;
+        } else if (id == R.id.btn_complete) {
+            Uri[] arrUri = mAdapter.getSelectedUri().toArray(new Uri[mAdapter.getSelectedUri().size()]);
+
+            Intent intent = new Intent();
+            intent.putExtra(EXTRA_IMAGE_URIS, arrUri);
+            setResult(RESULT_OK, intent);
+            finish();
+
         }
     }
 

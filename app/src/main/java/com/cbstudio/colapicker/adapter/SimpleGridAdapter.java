@@ -16,6 +16,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Colabear on 2016-03-16.
+ */
 public class SimpleGridAdapter extends ArrayAdapter<Uri> {
 
     private Context mContext;
@@ -27,7 +30,7 @@ public class SimpleGridAdapter extends ArrayAdapter<Uri> {
         super(context, resource, objects);
         mContext = context;
         mInflater = LayoutInflater.from(context);
-        mSelectedUri = new ArrayList<>();
+        mSelectedUri = new ArrayList<Uri>();
     }
 
     public List<Uri> getSelectedUri()
