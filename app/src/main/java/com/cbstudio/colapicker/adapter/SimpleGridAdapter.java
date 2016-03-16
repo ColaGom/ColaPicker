@@ -20,7 +20,6 @@ public class SimpleGridAdapter extends ArrayAdapter<Uri> {
 
     private Context mContext;
     private LayoutInflater mInflater;
-    private int mGridWidth;
 
     private List<Uri> mSelectedUri;
 
