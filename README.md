@@ -1,8 +1,9 @@
 ColaPicker
 =====
 ColaPicker is so simple library for multiple image picker from your android device.
-it's with glide. so fast , simple :)
-Surpport select picture index labeling.
+with glide. so fast , simple :) <br>
+surpport select picture index labeling :) <br>
+**Without Android ActionBar & Toolbar.**
 
 ###ScreenShot
 ![Capture1](capture_1.png)
@@ -49,6 +50,11 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 ```
 
 ###Customize
+
+*res/layout/row_grid.xml
+*res/layout/header.xml
+*values/colors.xml
+
 
 ###With
 [Glide](https://github.com/bumptech/glide/)
