@@ -28,6 +28,6 @@ Usage
 Customize
 =====
 
-White
+With
 =====
-[@Glide](https://github.com/bumptech/glide/)
+[Glide](https://github.com/bumptech/glide/)
