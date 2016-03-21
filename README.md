@@ -3,6 +3,9 @@ ColaPicker
 ColaPicker is so simple library for multiple image picker from your android device.
 it's with glide. so fast , simple :)
 
+ScreenShot
+=====
+![Capture1](capture_1.png)
 
 Import
 =====
