@@ -2,12 +2,13 @@ ColaPicker
 =====
 ColaPicker is so simple library for multiple image picker from your android device.
 it's with glide. so fast , simple :)
+Surpport select picture index labeling.
 
 ScreenShot
 =====
 ![Capture1](capture_1.png)
 
-Import
+Download
 =====
 ```gradle
 repositories {
@@ -21,3 +22,12 @@ dependencies {
 }
 ```
 
+Usage
+=====
+
+Customize
+=====
+
+White
+=====
+[@Glide](https://github.com/bumptech/glide/)
