@@ -51,9 +51,9 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ###Customize
 
-*res/layout/row_grid.xml
-*res/layout/header.xml
-*values/colors.xml
+res/layout/row_grid.xml <br>
+res/layout/header.xml <br>
+values/colors.xml <br>
 
 
 ###With
