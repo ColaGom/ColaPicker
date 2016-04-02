@@ -48,13 +48,22 @@ public class SimpleGridAdapter extends ArrayAdapter<Uri> {
         }else{
             mSelectedUri.add(uri);
             holder.rootCurver.setVisibility(View.VISIBLE);
-            holder.tvIndex.setText((getIndex(uri) + 1) + "");
+            holder.tvIndex.setText(getIndexString(uri));
         }
     }
 
     public boolean containsUri(Uri uri)
     {
         return mSelectedUri.contains(uri);
+    }
+    
+    private String getIndexString(Uri uri)
+    {
+        int idx = getIndex(uri);
+        if(getIndex(uri) == -1){
+            return "NULL";
+        }    
+        return (idx+1) + "";
     }
 
     private int getIndex(Uri image)
